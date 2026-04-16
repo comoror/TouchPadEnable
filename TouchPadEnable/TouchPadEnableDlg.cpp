@@ -456,6 +456,12 @@ LRESULT CTouchPadEnableDlg::OnUpdateTouchPadStatus(WPARAM wParam, LPARAM lParam)
 // 托盘菜单"退出"
 void CTouchPadEnableDlg::OnTrayExit()
 {
+	// 退出前，如果触摸板处于禁用状态，则切换至启用
+	if (GetTouchPadStatus() == 0)
+	{
+		ToggleTouchPad();
+	}
+
 	// 真正退出程序
 	CDialogEx::OnCancel();
 }
