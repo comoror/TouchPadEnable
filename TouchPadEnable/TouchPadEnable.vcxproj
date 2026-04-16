@@ -207,7 +207,7 @@
     <None Include="res\TouchPadEnable.rc2" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="res\TouchPadEnable.ico" />
+    <Image Include="res\touchpad.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
